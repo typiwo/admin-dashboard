@@ -1,0 +1,34 @@
+/*
+LOOK AT CSS EXERCISES REPO FOR HELP
+*/
+
+/* grid-area: start row / start col / end row / end col */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.grid-body {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 3fr;
+} 
+
+/* DASHBOARD PANEL */
+.panel {
+    background-color: aqua;
+    grid-area: 1 / 1 / 3 / 1;
+}
+
+/* HEADER */
+.header {
+    background-color: antiquewhite;
+    grid-area: 1 / 2 / 2 / 2;
+}
+
+/* BODY */
+.body {
+    background-color:darksalmon;
+    grid-area: 2 / 2 / 3 / 3;
+}
