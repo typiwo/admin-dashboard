@@ -45,26 +45,56 @@ LOOK AT CSS EXERCISES REPO FOR HELP
     grid-template-columns: 1fr 4fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     height: 150px;
+    padding: 10px;
 }
 
+
 .upper-header {
-    grid-area: 1 / 1 / 1 / 5;
+    grid-area: 1 / 1 / 1 / 6;
     display: grid;
-    grid-template-columns: 4fr 1fr;  /*2 columns, search col wider*/
+    grid-template-columns: 4fr 1fr;  
+    gap: 50px;
+    width:auto;
 }
+
 
 .search-section {
     display: grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 1fr 10fr;
+    gap: 5px;
+}
+
+#search-icon img {
+   height: 1.5rem;
+}
+
+#search-box {
+    height: 1.5rem;
+    border-radius: 20px;
+    border: none;
+}
+
+#notification-bell img{
+    height: 1.5rem;
+}
+
+.personal-section #profile-pic img {
+    height: 2rem;
+}
+
+.personal-section #name {
+    width: max-content;
+    justify-self: end;
 }
 
 .personal-section {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
 }
 
 .lower-header {
-    grid-area: 2 / 1 / 2 / 5;
+    grid-area: 2 / 1 / 2 / 6;
     display: grid;
     grid-template-columns: 4fr 1fr;
 }
@@ -74,9 +104,23 @@ LOOK AT CSS EXERCISES REPO FOR HELP
     grid-template-columns: 1fr 3fr;
 }
 
+.greeting-block #profile-pic img {
+    height: 3rem;
+}
+
 .buttons-block {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    gap: 25px
+}
+
+.buttons-block button {
+    border-radius: 20px;
+    height: fit-content;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 7px;
+    padding-bottom: 7px;
 }
 
 
